@@ -3,3 +3,4 @@ build.gradle
 manifest-merger-release-report.txt
 proguard-rules.pro
 stipendia.apk
+Analytics.java
