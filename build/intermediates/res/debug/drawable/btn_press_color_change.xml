@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/border_for_icon_pressed"/>
+    <item android:drawable="@drawable/border_for_icon" />
+</selector><!-- From: file:/C:/Users/Mark/AndroidStudioProjects/ReRub/app/src/main/res/drawable/btn_press_color_change.xml -->

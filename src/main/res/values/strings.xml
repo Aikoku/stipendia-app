@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="about_version">ver: 0.6.0</string>
+
+    <string name="totalRub"> </string>
+    <string name="app_name">Стипендия</string>
+    <string name="action_settings">Settings</string>
+    <string name="rub">руб.</string>
+    <string name="kurs">Сегодняшний курс:</string>
+    <string name="youGet">Вы получите:</string>
+    <string name="lastDateUpd">Данные актуальны на:\n</string>
+    <string name="about_url1">Программа создана для отслеживания\n
+        суммы стипендии, после перевода,
+        в \n реальном времени.\n\n
+        По умолчанию выставленна сумма \n стипендии мера Москвы,\n
+        но вы её можете легко изменить.\n\n
+        Более подробная информация\n
+        о стипендии Мера Москвы по ссылке:
+    </string>
+    <string name="about_url2">
+        http://www.rao.ee/?lang=rus \n
+    </string>
+    <!--Европейскому Центр Банку-->
+    <string name="about_url3">
+        <b>Курс соответствуют Европейскому Центр Банку\n
+        и он может отличатся от местных банков.</b>\n
+        \n Автор: Марк Николаев
+    </string>
+    <string name="about_url4">
+        email: hotmark91@gmail.com \n
+        Обновления: http://www.justcalm.me/b/
+    </string>
+
+
+
+
+    <string name="about_email">
+
+    </string>
+
+    <string name="about_title">О программе</string>
+    <string name="info">Info</string>
+    <string name="graph">Graph</string>
+    <string name="change">Перевести:</string>
+    <string name="euro">Euro</string>
+    <string name="usddisc">USD</string>
+    <string name="eqls">=</string>
+    <string name="refreshRates">Refresh rates</string>
+    <string name="zoomHome">Zoom Home</string>
+    <string name="zoomOut">Zoom Out</string>
+    <string name="zoomIn">Zoom In</string>
+    <string name="home">Home</string>
+    <string name="todayIs">Сегодня: </string>
+
+</resources>

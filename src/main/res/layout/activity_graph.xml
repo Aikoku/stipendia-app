@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/graph_gradient"
+    android:id="@+id/graphActivity">
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/main"
+        android:src="@drawable/home_icon"
+        android:background="@drawable/btn_press_color_change"
+        android:contentDescription="@string/home"
+        android:onClick="changeActivityToMain"
+
+
+        android:layout_gravity="left|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <ImageButton
+
+
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/info"
+        android:src="@drawable/info_icon_1"
+        android:background="@drawable/btn_press_color_change"
+        android:contentDescription="@string/info"
+        android:onClick="changeLayoutToInfo"
+
+
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout android:id="@+id/chart"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="374dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/info"
+        android:layout_toRightOf="@+id/main"
+        android:layout_toEndOf="@+id/main"
+        android:layout_alignTop="@+id/main"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/frameLayout">
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/zoomOut"
+            android:layout_gravity="center"
+            android:background="@drawable/zoom_out_color_change"
+            android:src="@drawable/zooming_out"
+            android:contentDescription="@string/zoomOut"
+            android:onClick="zoomOut"
+            android:layout_alignTop="@+id/zoomHome"
+            android:layout_toLeftOf="@+id/zoomHome"
+            android:layout_toStartOf="@+id/zoomHome"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/zoomHome"
+            android:layout_gravity="center"
+            android:background="@drawable/zoom_home_color_change"
+            android:src="@drawable/zooming_home"
+            android:contentDescription="@string/zoomHome"
+            android:onClick="zoomHome"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/zoomIn"
+            android:layout_gravity="center"
+            android:background="@drawable/zoom_in_color_change"
+            android:src="@drawable/zooming_in"
+            android:contentDescription="@string/zoomIn"
+            android:onClick="zoomIn"
+            android:layout_marginLeft="44dp"
+            android:layout_marginBottom="5dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/todayIs"
+        android:id="@+id/todayIs"
+        android:layout_gravity="center"
+        android:layout_above="@+id/frameLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

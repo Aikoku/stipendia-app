@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stipendia.mark.rerub"
+    android:versionCode="1"
+    android:versionName="0.6.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.stipendia.mark.rerub.Analytics"
+        android:allowBackup="true"
+        android:icon="@drawable/pig_money_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.stipendia.mark.rerub.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.stipendia.mark.rerub.AboutActivity"
+            android:label="О программе" />
+        <activity
+            android:name="com.stipendia.mark.rerub.GraphActivity"
+            android:label="График курса" />
+
+        <!-- <activity android:name="org.achartengine.GraphicalActivity"/> -->
+    </application>
+
+</manifest>

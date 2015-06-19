@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/about_gradient"
+    android:id="@+id/aboutActivity"
+    android:focusable="true">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_version"
+        android:id="@+id/textView9"
+        android:layout_gravity="left|top"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/main"
+        android:src="@drawable/home_icon"
+        android:background="@drawable/btn_press_color_change"
+        android:contentDescription="@string/home"
+        android:onClick="changeActivityToMain"
+
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/graph_icon"
+        android:background="@drawable/btn_press_color_change"
+        android:contentDescription="@string/graph"
+        android:onClick="changeLayoutToGraph"
+        android:layout_gravity="left|bottom"
+        android:layout_alignTop="@+id/main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/textView9"
+            android:layout_above="@+id/main"
+            android:gravity="center_vertical"
+            android:layout_alignRight="@+id/main"
+            android:layout_alignEnd="@+id/main"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_url1"
+                android:id="@+id/about_url1"
+
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_url2"
+                android:id="@+id/about_url2"
+
+                android:autoLink="web"
+                android:gravity="center"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_url3"
+                android:id="@+id/about_url3"
+
+                android:gravity="center"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_url4"
+                android:id="@+id/about_url4"
+
+                android:autoLink="web|email"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+</RelativeLayout><!-- From: file:/C:/Users/Mark/AndroidStudioProjects/ReRub/app/src/main/res/layout/activity_about.xml -->
